@@ -23,15 +23,25 @@ A modular real-time face recognition system built with Python, OpenCV, and Insig
 
 faceRec/
 │
+
 ├── main.py # Main launcher script
+
 ├── recognize.py # Handles AI and recognition logic
+
 ├── local_db.py # Loads and manages face database
+
 ├── gui.py # GUI components (real-time camera + add user screen)
+
 ├── face_db/ # Face data storage per person (images + info.json)
+
 │ └── John_Doe/
+
 │ ├── 1.png ... 9.png
+
 │ └── info.json
+
 └── assets/
+
 └── pose_guide.png # (Optional) Pose guide shown during registration
 
 -----------------------
@@ -71,6 +81,7 @@ faceRec/
 -----------------------
 
 🐞 Known Bugs & Notes
+
 🐌 The app may run slow initially — loading models and GUI pages can take a few seconds.
 
 🖼️ During first registration, face images might not be saved to face_db/. This can cause errors on recognition. After one successful registration, it works as expected.
